@@ -1,0 +1,115 @@
+BABEL_DEFAULT_LOCALE = "en_GB"
+
+HOME_URL = "https://climate.educationevidence.io/"
+HOME_TITLE = "CLIMATE CHANGE"
+
+[kerko.meta]
+
+title = "Evidence Library – CLIMATE CHANGE"
+google_analytics_id = "UA-169419325-2"
+
+[kerko.link_groups]
+
+[[kerko.link_groups.breadcrumb_base]]
+text = "CLIMATE CHANGE"
+type = "url"
+url = "https://climate.educationevidence.io/"
+
+[[kerko.link_groups.breadcrumb_base]]
+text = "Evidence Library"
+type = "endpoint"
+endpoint = "kerko.search"
+
+[kerko.features]
+
+download_attachment_new_window = true
+open_in_zotero_app = true
+open_in_zotero_web = true
+print_item = true
+print_results = true
+results_abstracts = true
+results_abstracts_max_length = 500
+results_abstracts_max_length_leeway = 40
+relations_initial_limit = 50
+
+[kerko.search]
+
+result_fields = ["id", "attachments", "bib", "data", "preview", "url"]
+whoosh_language = "en"
+
+[kerko.templates]
+
+layout = "kerkoapp/layout.html.jinja2"
+search = "kerkoapp/search.html.jinja2"
+search_item = "kerkoapp/search-item.html.jinja2"
+item = "kerkoapp/item.html.jinja2"
+
+[kerko.zotero]
+
+locale = "en-GB"
+batch_size = 20
+
+# CAUTION: The URL's query string (after the '?') must be changed after any edit
+# to the CSL style, otherwise zotero.org might still use a previously cached
+# version of the file.
+csl_style = "https://docs.opendeved.net/static/dist/csl/eth_apa.xml?202012301815"
+
+item_exclude_re = "^_exclude$"
+
+child_include_re = "^(_publish)|(publishPDF)$"
+child_exclude_re = ""
+
+[kerko.facets]
+
+[kerko.facets.tag]
+enabled = false
+
+[kerko.facets.link]
+enabled = false
+
+[kerko.facets.item_type]
+enabled = false
+
+[kerko.facets.theme]
+enabled = true
+type = "collection"
+collection_key = "UZ9FL427"
+filter_key = "theme"
+title = "Theme"
+weight = 10
+initial_limit = 15
+initial_limit_leeway = 5
+
+[kerko.facets.type]
+enabled = true
+type = "collection"
+collection_key = "MZVN34PG"
+filter_key = "type"
+title = "Type"
+weight = 20
+initial_limit = 5
+initial_limit_leeway = 2
+
+
+[kerko.facets.location]
+enabled = true
+type = "collection"
+collection_key = "V6ADSUTY"
+filter_key = "location"
+title = "Location"
+weight = 50
+initial_limit = 5
+initial_limit_leeway = 2
+
+[kerko.performance]
+
+whoosh_index_memory_limit = 64
+
+[kerkoapp.proxy_fix]
+
+enabled = false
+x_for = 1
+x_proto = 1
+x_host = 0
+x_port = 0
+x_prefix = 0
