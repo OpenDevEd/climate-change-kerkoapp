@@ -73,33 +73,13 @@ enabled = false
 [kerko.facets.theme]
 enabled = true
 type = "collection"
-collection_key = "UZ9FL427"
+collection_key = "AI5BCRZ8"
 filter_key = "theme"
 title = "Theme"
 weight = 10
 initial_limit = 15
 initial_limit_leeway = 5
 
-[kerko.facets.type]
-enabled = true
-type = "collection"
-collection_key = "MZVN34PG"
-filter_key = "type"
-title = "Type"
-weight = 20
-initial_limit = 5
-initial_limit_leeway = 2
-
-
-[kerko.facets.location]
-enabled = true
-type = "collection"
-collection_key = "V6ADSUTY"
-filter_key = "location"
-title = "Location"
-weight = 50
-initial_limit = 5
-initial_limit_leeway = 2
 
 [kerko.performance]
 
